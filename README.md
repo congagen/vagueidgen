@@ -1,2 +1,5 @@
 # vagueidgen
-identicon generator sketch
+
+Example usage:
+
+$ python factory.py order.json
