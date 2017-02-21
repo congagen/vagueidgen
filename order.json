@@ -4,7 +4,7 @@
   "extension": ".png",
   "append_date": true,
 
-  "head_color": [100, 25, 255],
+  "head_color": [0, 25, 255],
   "eye_color": [150, 50, 255],
   "pupil_color": [0, 255, 100],
   "nose_color": [0, 255, 100],
@@ -17,8 +17,8 @@
   "nose_distance": 0.05,
   "mouth_distance": 0.12,
 
-  "fature_scale_ratio": 0.3,
-  "fature_detail_ratio": 0.5,
+  "feature_scale_ratio": 0.3,
+  "feature_detail_ratio": 0.5,
 
   "iterations": 1,
   "gamma": 255,

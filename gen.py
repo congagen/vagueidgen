@@ -38,7 +38,6 @@ def image_order(order_dct, i):
     )
 
 
-
 def process_order(order):
     order_dct = data_mgmt.json_to_dict(order[1])
 

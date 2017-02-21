@@ -2,4 +2,4 @@
 
 Example usage:
 
-$ python factory.py order.json
+$ python gen.py order.json

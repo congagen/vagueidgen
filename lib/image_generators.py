@@ -10,9 +10,9 @@ def obscuface(order_dct, img_num):
     face_center_x = int(order_dct["size_x"] * 0.5)
     face_center_y = int(order_dct["size_y"] * 0.5)
 
-    eye_size = int(order_dct["size_x"] * order_dct["fature_scale_ratio"])
-    nose_size = int(order_dct["size_x"] * order_dct["fature_scale_ratio"])
-    mouth_size = int(order_dct["size_x"] * (order_dct["fature_scale_ratio"] * 1.1))
+    eye_size = int(order_dct["size_x"] * order_dct["feature_detail_ratio"])
+    nose_size = int(order_dct["size_x"] * order_dct["feature_detail_ratio"])
+    mouth_size = int(order_dct["size_x"] * (order_dct["feature_detail_ratio"] * 1.1))
 
     eye_center = face_center_x - int(eye_size * 0.5)
     nose_center = face_center_y - int(nose_size * 0.5)
@@ -22,9 +22,9 @@ def obscuface(order_dct, img_num):
     nose_dist = int(order_dct["size_y"] * order_dct["nose_distance"])
     mouth_dist = int(order_dct["size_y"] * order_dct["mouth_distance"])
 
-    eye_seed_size = abs(int(seed_size * order_dct["fature_detail_ratio"])) + 1
-    nose_seed_size = abs(int(seed_size * order_dct["fature_detail_ratio"])) + 1
-    mouth_seed_size = abs(int(seed_size * order_dct["fature_detail_ratio"])) + 1
+    eye_seed_size = abs(int(seed_size * order_dct["feature_detail_ratio"])) + 1
+    nose_seed_size = abs(int(seed_size * order_dct["feature_detail_ratio"])) + 1
+    mouth_seed_size = abs(int(seed_size * order_dct["feature_detail_ratio"])) + 1
 
 
     composite_seed = seed_generators.scaled_noise(seed_size,
