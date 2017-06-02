@@ -1,5 +1,6 @@
-# vagueidgen
+### Usage:
 
-Example usage:
-
+```sh
 $ python gen.py order.json
+
+```
